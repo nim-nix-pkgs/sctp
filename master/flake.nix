@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sctp-master.flake = false;
+  inputs.src-sctp-master.ref   = "refs/heads/master";
   inputs.src-sctp-master.owner = "metacontainer";
-  inputs.src-sctp-master.ref   = "master";
   inputs.src-sctp-master.repo  = "sctp.nim";
   inputs.src-sctp-master.type  = "github";
   
