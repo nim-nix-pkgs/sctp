@@ -3,10 +3,12 @@
     "collections": {
       "inputs": {
         "flakeNimbleLib": [
+          "sctp-master",
           "reactor",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "sctp-master",
           "reactor",
           "nixpkgs"
         ],
@@ -66,20 +68,22 @@
       "inputs": {
         "collections": "collections",
         "flakeNimbleLib": [
+          "sctp-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "sctp-master",
           "nixpkgs"
         ],
         "src-reactor-v0_5_0": "src-reactor-v0_5_0"
       },
       "locked": {
         "dir": "v0_5_0",
-        "lastModified": 1656301862,
-        "narHash": "sha256-NZD/viUAq6IqIQ2AT8mYL+ygX7YN1EUrJbxx46Qbtmo=",
+        "lastModified": 1653702993,
+        "narHash": "sha256-A6h6GJbaidMZ3u1WkfwC7krKWef4yxBvtmDYHGGQGDw=",
         "owner": "nim-nix-pkgs",
         "repo": "reactor",
-        "rev": "fc0462f559dae3634279197e4ed8554843c63677",
+        "rev": "871d5295fa4ad07fc3a22c698e4ce4f4e51b3ac4",
         "type": "github"
       },
       "original": {
@@ -94,8 +98,35 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "sctp-master": "sctp-master"
+      }
+    },
+    "sctp-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "reactor": "reactor",
         "src-sctp-master": "src-sctp-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653703219,
+        "narHash": "sha256-z6g9I/hRsTKyQC1pxoLxhqemhtgBUZ32GxYL6xUvIpc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sctp",
+        "rev": "35d1adad66f5df561083a781333cfcc03a2f437a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sctp",
+        "type": "github"
       }
     },
     "src-collections-v0_5_2": {
